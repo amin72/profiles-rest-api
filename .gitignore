@@ -24,3 +24,5 @@ tmp/
 .env
 db.sqlite3
 .vscode/
+.vagrant
+*.log
