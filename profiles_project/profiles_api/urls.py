@@ -8,12 +8,13 @@ app_name = 'profiles_api'
 
 router = DefaultRouter()
 router.register('profile', views.UserProfileViewSet)
+router.register('feed', views.UserProfileFeedViewSet)
 
 
 urlpatterns = [
     # login
     path('login/', views.UserLoginAPIView.as_view(), name='login'),
-
+    
     # profile crud
     path('', include(router.urls)),
 ]
